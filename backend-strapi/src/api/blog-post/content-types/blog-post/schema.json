@@ -66,6 +66,12 @@
       },
       "type": "uid",
       "targetField": "Title"
+    },
+    "content_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::content-type.content-type",
+      "inversedBy": "blog_posts"
     }
   }
 }
